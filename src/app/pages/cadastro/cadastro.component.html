@@ -1,1 +1,61 @@
-<p>cadastro works!</p>
+<div class="col-md-12">
+  <nb-card>
+    <nb-card-header>Cadastro de paciente</nb-card-header>
+    <nb-card-body>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="inputFirstName" class="label">Nome</label>
+              <input
+                type="text"
+                nbInput
+                fullWidth
+                id="inputFirstName"
+                placeholder="Nome"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="inputLastName" class="label">Sobrenome</label>
+              <input
+                type="text"
+                nbInput
+                fullWidth
+                id="inputLastName"
+                placeholder="Sobrenome"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="label"
+            >Endereço de email</label
+          >
+          <input
+            type="email"
+            nbInput
+            fullWidth
+            id="exampleInputEmail1"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="label">Senha</label>
+          <input
+            type="password"
+            nbInput
+            fullWidth
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <nb-checkbox>Check</nb-checkbox>
+        </div>
+        <button type="submit" nbButton status="danger">Enviar</button>
+      </form>
+    </nb-card-body>
+  </nb-card>
+</div>

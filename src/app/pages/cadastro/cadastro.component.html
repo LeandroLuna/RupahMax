@@ -26,8 +26,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <nb-select selected="default" fullWidth>
-                <nb-option value="default">Estado Civil</nb-option>
+              <label for="inputEstadoCivil" class="label">Estado Civil</label>
+              <nb-select selected="default" fullWidth id="inputEstadoCivil">
+                <nb-option value="default">&nbsp;</nb-option>
                 <nb-option value="solteiro">Solteiro</nb-option>
                 <nb-option value="casado">Casado</nb-option>
               </nb-select>
@@ -44,9 +45,12 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
+              <label for="inputData" class="label mr-2"
+                >Data de Nascimento</label
+              >
+              <nb-icon icon="calendar-outline" status="primary"></nb-icon>
               <input
                 nbInput
-                placeholder="Data de Nascimento"
                 [nbDatepicker]="formpicker"
                 id="inputData"
                 fullWidth
@@ -56,8 +60,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <nb-select selected="default" fullWidth>
-                <nb-option value="default">Genero</nb-option>
+              <label for="inputGenero" class="label">Gênero</label>
+              <nb-select selected="default" fullWidth id="inputGenero">
+                <nb-option value="default">&nbsp;</nb-option>
                 <nb-option value="solteiro">Masculino</nb-option>
                 <nb-option value="casado">Feminino</nb-option>
               </nb-select>
@@ -65,8 +70,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <nb-select selected="default" fullWidth>
-                <nb-option value="default">Raça</nb-option>
+              <label for="inputRaca" class="label">Raça</label>
+              <nb-select selected="default" fullWidth id="inputRaca">
+                <nb-option value="default">&nbsp;</nb-option>
                 <nb-option value="solteiro">Branco</nb-option>
                 <nb-option value="casado">Pardo</nb-option>
               </nb-select>
@@ -75,10 +81,21 @@
         </div>
 
         <div class="row">
-          <div class="col-md-8">
-            <label for="inputDoenca" class="label">Doença crônica</label>
+          <div class="col-md-5 col-lg-4">
+            <div class="form-group">
+              <label for="inputDoenca" class="label">Doença crônica</label>
+              <nb-radio-group
+                id="inputDoenca"
+                class="d-flex ml-md-4 ml-lg-5"
+                name="inputDoenca"
+              >
+                <nb-radio value="sim">Sim</nb-radio>
+                <nb-radio value="nao">Não</nb-radio>
+                <nb-radio value="naoSei">Não sei</nb-radio>
+              </nb-radio-group>
+            </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-7 col-lg-8">
             <div class="form-group">
               <label for="inputQualDoenca" class="label">Qual?</label>
               <input type="text" nbInput fullWidth id="inputQualDoenca" />
@@ -87,13 +104,30 @@
         </div>
 
         <div class="row">
-          <div class="col-md-7">
-            <label for="inputAlergia" class="label">Alergia</label>
+          <div class="col-md-5 col-lg-4">
+            <div class="form-group">
+              <label for="inputAlergia" class="label">Alergia</label>
+              <nb-radio-group
+                id="inputAlergia"
+                class="d-flex ml-md-4 ml-lg-5"
+                name="inputAlergia"
+              >
+                <nb-radio value="sim">Sim</nb-radio>
+                <nb-radio value="nao">Não</nb-radio>
+                <nb-radio value="naoSei">Não sei</nb-radio>
+              </nb-radio-group>
+            </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-7 col-lg-8">
             <div class="form-group">
               <label for="inputQualAlergia" class="label">Qual?</label>
-              <input type="text" nbInput fullWidth id="inputQualAlergia" />
+              <input
+                type="text"
+                nbInput
+                fullWidth
+                id="inputQualAlergia"
+                disabled
+              />
             </div>
           </div>
         </div>

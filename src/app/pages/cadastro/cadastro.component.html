@@ -6,55 +6,137 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="inputFirstName" class="label">Nome</label>
-              <input
-                type="text"
-                nbInput
-                fullWidth
-                id="inputFirstName"
-                placeholder="Nome"
-              />
+              <label for="inputPrimeiroNome" class="label">Nome</label>
+              <input type="text" nbInput fullWidth id="inputPrimeiroNome" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="inputLastName" class="label">Sobrenome</label>
-              <input
-                type="text"
-                nbInput
-                fullWidth
-                id="inputLastName"
-                placeholder="Sobrenome"
-              />
+              <label for="inputCPF" class="label">CPF</label>
+              <input type="text" nbInput fullWidth id="inputCPF" />
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1" class="label"
-            >Endereço de email</label
-          >
-          <input
-            type="email"
-            nbInput
-            fullWidth
-            id="exampleInputEmail1"
-            placeholder="Email"
-          />
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="inputRG" class="label">RG</label>
+              <input type="text" nbInput fullWidth id="inputRG" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <nb-select selected="default" fullWidth>
+                <nb-option value="default">Estado Civil</nb-option>
+                <nb-option value="solteiro">Solteiro</nb-option>
+                <nb-option value="casado">Casado</nb-option>
+              </nb-select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="inputCNS" class="label">CNS</label>
+              <input type="text" nbInput fullWidth id="inputCNS" />
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1" class="label">Senha</label>
-          <input
-            type="password"
-            nbInput
-            fullWidth
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input
+                nbInput
+                placeholder="Data de Nascimento"
+                [nbDatepicker]="formpicker"
+                id="inputData"
+                fullWidth
+              />
+              <nb-datepicker #formpicker></nb-datepicker>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <nb-select selected="default" fullWidth>
+                <nb-option value="default">Genero</nb-option>
+                <nb-option value="solteiro">Masculino</nb-option>
+                <nb-option value="casado">Feminino</nb-option>
+              </nb-select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <nb-select selected="default" fullWidth>
+                <nb-option value="default">Raça</nb-option>
+                <nb-option value="solteiro">Branco</nb-option>
+                <nb-option value="casado">Pardo</nb-option>
+              </nb-select>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <nb-checkbox>Check</nb-checkbox>
+
+        <div class="row">
+          <div class="col-md-8">
+            <label for="inputDoenca" class="label">Doença crônica</label>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="inputQualDoenca" class="label">Qual?</label>
+              <input type="text" nbInput fullWidth id="inputQualDoenca" />
+            </div>
+          </div>
         </div>
-        <button type="submit" nbButton status="danger">Enviar</button>
+
+        <div class="row">
+          <div class="col-md-7">
+            <label for="inputAlergia" class="label">Alergia</label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="inputQualAlergia" class="label">Qual?</label>
+              <input type="text" nbInput fullWidth id="inputQualAlergia" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="inputEmail" class="label">Endereço de email</label>
+              <input type="email" nbInput fullWidth id="inputEmail" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="inputTelefone" class="label">Telefone</label>
+              <input type="tel" nbInput fullWidth id="inputTelefone" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="inputCelular" class="label">Celular</label>
+              <input type="tel" nbInput fullWidth id="inputCelular" />
+              <!-- Alterar o type se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-sm-3 offset-md-custom offset-lg-custom">
+            <div class="buttons-row">
+              <button
+                style="margin-right: 5px"
+                type="submit"
+                nbButton
+                status="success"
+              >
+                Enviar
+              </button>
+              <button nbButton status="warning" routerLink="../dashboardExp">
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
       </form>
     </nb-card-body>
   </nb-card>

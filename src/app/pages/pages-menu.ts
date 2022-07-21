@@ -5,6 +5,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Dashboard',
     icon: 'activity-outline',
     link: '/pages/dashboardExp',
+    home: true,
   },
   {
     title: 'Cadastrar',
@@ -18,7 +19,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'E-commerce',
         icon: 'shopping-cart-outline',
         link: '/pages/dashboard',
-        home: true,
       },
       {
         title: 'IoT Dashboard',

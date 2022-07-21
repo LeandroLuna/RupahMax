@@ -1,0 +1,28 @@
+<nb-card size="small">
+
+  <nb-card-header>
+    <span>Exames</span>
+    <nb-icon icon="edit-2-outline" status=""></nb-icon>
+  </nb-card-header>
+
+  <nb-list class="user-activity-list">
+    <nb-list-item *ngFor="let item of userActivity">
+
+      <div class="visited-date">
+        <div class="caption">Dia</div>
+        <div class="value">{{ item.date }}</div>
+      </div>
+
+      <div class="visited-pages-count">
+        <div class="caption">Tipo</div>
+        <div class="value">{{ item.pagesVisitCount }}</div>
+      </div>
+
+      <div class="visited-percentages">
+        <div class="caption">Pronto?</div>
+        <div class="delta value" [class.up]="item.deltaUp" [class.down]="!item.deltaUp">
+          <nb-icon [icon]="item.deltaUp ? 'checkmark-square-2-outline' : 'square-outline'"></nb-icon>
+        </div>
+      </div>
+    </nb-list-item>
+  </nb-list>

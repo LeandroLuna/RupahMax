@@ -9,6 +9,7 @@ import {
   NbSelectModule,
   NbListModule,
   NbIconModule,
+  NbSidebarModule
 } from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { ThemeModule } from '../../@theme/theme.module';
@@ -29,6 +30,7 @@ import { SolarComponent } from './solar/solar.component';
     NbCardModule,
     NbUserModule,
     NbButtonModule,
+    NbSidebarModule,
     NbTabsetModule,
     NbActionsModule,
     NbRadioModule,

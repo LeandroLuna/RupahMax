@@ -7,7 +7,6 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
-import { DashboardExpComponent } from './dashboard-exp/dashboard-exp.component';
 
 @NgModule({
   imports: [
@@ -20,7 +19,6 @@ import { DashboardExpComponent } from './dashboard-exp/dashboard-exp.component';
   ],
   declarations: [
     PagesComponent,
-    DashboardExpComponent,
   ],
 })
 export class PagesModule {

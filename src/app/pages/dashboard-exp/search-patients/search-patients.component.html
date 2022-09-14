@@ -1,0 +1,23 @@
+<nb-sidebar class="patients-sidebar" tag="patients-sidebar" responsive right>
+  <!-- <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+    <nb-icon icon=search pack="eva"></nb-icon>
+  </a>
+  <div *ngIf="showContent">
+    <label for="search_patients">Pesquisar paciente</label>
+    <input type="text" name="pacient_name" id="search_patients">
+  </div> -->
+
+  <nb-card size="large">
+    <nb-card-header>
+      <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+        <nb-icon icon=search pack="eva"></nb-icon>
+      </a>
+    </nb-card-header>
+    <nb-card-body *ngIf="showContent">
+      <label for="search_patients">Pesquisar paciente</label>
+      <input type="text" name="pacient_name" id="search_patients">
+    </nb-card-body>
+  </nb-card>
+
+</nb-sidebar>
+

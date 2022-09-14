@@ -21,6 +21,7 @@ import { TrafficComponent } from './traffic/traffic.component';
 import { TrafficChartComponent } from './traffic/traffic-chart.component';
 import { UserActivityComponent } from './user-activity/user-activity.component';
 import { SolarComponent } from './solar/solar.component';
+import { SearchPatientsComponent } from './search-patients/search-patients.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { SolarComponent } from './solar/solar.component';
     TrafficComponent,
     TrafficChartComponent,
     UserActivityComponent,
-    SolarComponent
+    SolarComponent,
+    SearchPatientsComponent
   ],
 })
 export class DashboardExpModule { }

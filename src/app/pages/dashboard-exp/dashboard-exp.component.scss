@@ -1,11 +1,2 @@
-@import 'src/app/@theme/styles/themes.scss';
-@import '~bootstrap/scss/mixins/breakpoints';
-@import '~@nebular/theme/styles/global/breakpoints';
 
-@include nb-install-component() {
-  .patients-sidebar ::ng-deep .scrollable {
-    margin-right: -15%;
-    background-color: white;
-  }
-}
 

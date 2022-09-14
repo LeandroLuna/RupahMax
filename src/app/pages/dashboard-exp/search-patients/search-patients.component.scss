@@ -1,0 +1,22 @@
+@import 'src/app/@theme/styles/themes.scss';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .patients-sidebar ::ng-deep .scrollable {
+    background-color: white;
+  }
+
+  nb-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    padding-top: nb-theme(card-header-with-select-padding-top);
+    padding-bottom: nb-theme(card-header-with-select-padding-bottom);
+
+    a {
+      margin: auto;
+    }
+  }
+}
